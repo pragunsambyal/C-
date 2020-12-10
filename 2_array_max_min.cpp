@@ -2,12 +2,14 @@
 using namespace std;
 int main() {
 	int arr[10],size,i,max=INT_MIN,min=INT_MAX;
+	std::cout<<"Enter size of array:";
+	std::cin>>size;
 	std::cout<<"Enter elements of array:"<<std::endl;
 	for(i=0;i<size;i++)
 	{
 		std::cin>>arr[i];
 	}
-	size = sizeof(arr) / sizeof(arr[0]);
+	
 	for(i=0;i<size;i++)
 	{
 		if(arr[i]>max)
